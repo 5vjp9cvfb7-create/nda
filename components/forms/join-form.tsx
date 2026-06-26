@@ -30,7 +30,7 @@ export function JoinForm() {
     event.preventDefault();
     setStatus("loading");
 
-    const response = await fetch("/api/join", {
+    const response = await fetch("https://formspree.io/f/xkolroek", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(form)
